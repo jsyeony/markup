@@ -15,9 +15,15 @@
       background-color: white;
     }
     ul > li {
-      background-color: orange;
       margin: 5px;
       border: 1px solid #333;
+    }
+    li > div > a {
+      color: #073;
+    }
+    ol > li {
+      background-color: #fc0;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -27,12 +33,15 @@
     <h2>자손, 자식 선택자</h2>
     <ul>
       <li>list 01</li>
-      <li>list 02
+      <li>
+        <div>
+          <a href="#">list 02</a>
+        </div>
         <ol>
-          <li>sub list 01</li>
-          <li>sub list 02</li>
-          <li>sub list 03</li>
-          <li>sub list 04</li>
+          <li><a href="#">sub list 01</a></li>
+          <li><a href="#">sub list 02</a></li>
+          <li><a href="#">sub list 03</a></li>
+          <li><a href="#">sub list 04</a></li>
         </ol>
       </li>
       <li>list 03</li>
