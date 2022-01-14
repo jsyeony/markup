@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* a_18_layout_01.css */
+body, h1, h2, h3, h4, h5, h6, hr {
+  margin: 0;
+  border: 0;
+}
+hr {
+  border-top: 1px solid #333;
+}
+/* --------------------------------- */
+#wrap {
+  width: 900px; height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+  background-color: #eff;
+}
+.part {
+  width: 800px; height: 800px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #eee;
+}
+h3 {
+  width: 100%; height: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #acf;
+}
+.exam {
+  width: 600px; height: 600px;
+  border: 1px solid #333;
+  background-color: white;
+}
+.box_01 {
+  width: 600px; height: auto;
+  margin: auto;
+  margin-top: 10px;
+}
+.box_01 > div {
+  width: 100%; height: 200px;
+}
+.inner_01 {
+  color: white;
+  background-color: #456ea2;
+}
+.inner_02 {
+  background-color: #fff9eb;
+}
+.inner_03 {
+  background-color: #ffcf5d;
+}
+.box_02 {
+  width: 800px; height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+.box_02::after {
+  content: "";
+  display: block;
+  width: 100%; height: 0;
+  clear: both;
+}
+.box_02 > div {
+  float: left;
+  width: 33.333333%; height: 600px;
+}
+.box_03 {
+  width: 600px; height: auto;
+  margin: auto;
+  background-color: #95d6a4;
+}
+.box_03 > div {
+  width: 200px; height: 300px;
+  margin: auto;
+}
+/* ------------------------------ */
+.box_04 {
+  width: 600px; height: auto;
+  min-height: 200px;
+  margin: auto;
+}
+.box_04 > div {
+  width: 100%; height: auto;
+  margin: auto;
+}
+.box_04  .insert {
+  width: 60%; height: 200px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+}
+.box_04 > .inner_01 > .insert {
+  color: black;
+  background-color: #ffce5d;
+}
+.exam > .inner_02 > .insert {
+  width: 45%;
+  background-color: #dc5447;
+}
+.exam > .inner_03 > .insert {
+  margin: 0;
+  background-color: #7f94ff;
+}
+/* ----------------------------------- */
+.box_05 {
+  width: 600px; height: auto;
+  margin: auto;
+}
+.box_05::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box_05 > div {
+  float: left;
+  width: 200px; height: 600px;
+}
+.box_05  .insert {
+  width: 100%; height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+}
+.box_05 > .inner_01 > .insert {
+  color: black;
+  background-color: #ffce5d;
+}
+.box_05 > .inner_02 > .insert {
+  width: 200px;
+  margin-top: 200px;
+  background-color: #dc5447;
+}
+.box_05 > .inner_03 > .insert {
+  margin-top: 400px;
+  background-color: #7f94ff;
+}
