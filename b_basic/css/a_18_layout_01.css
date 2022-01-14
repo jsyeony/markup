@@ -136,3 +136,56 @@ h3 {
   margin-top: 400px;
   background-color: #7f94ff;
 }
+
+/* ------------------------------------------- */
+
+.box_06 {
+  width: 600px; height: auto;
+  margin: auto;
+}
+.box_06::after {
+  content: "";
+  display: block;
+  width: 100%; height: 0;
+  clear: both;
+}
+.box_06 > div,
+.box_06 > div > div {
+  float: left;
+  width: 100%; height: auto;
+  margin: 0;
+}
+.box_06 .insert_1,
+.box_06 .insert_2,
+.box_06 .insert_3 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 230px; height: 200px;
+  color: white;
+}
+.box_06 > .inner_01 > .insert_1 {
+  color: black;
+  background-color: #ffce5d;
+}
+.box_06 > .inner_01 > .insert_2 {
+  margin-left: 140px;
+  color: black;
+  background-color: #fff9eb;
+}
+.box_06 > .inner_02 > .insert_1 {
+  background-color: #dc5447;
+}
+.box_06 > .inner_02 > .insert_2 {
+  width: 140px;
+  background-color: #777;
+}
+.box_06 > .inner_02 > .insert_3 {
+  background-color: rgb(211, 168, 143);
+}
+.box_06 > .inner_03 > .insert_1 {
+  width: 370px;
+  background-color: #7f94ff;
+}
+.box_06 > .inner_03 > .insert_2 {
+  background-color: #777;
+}
