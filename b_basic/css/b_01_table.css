@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* b_01_table.css */
+caption {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+table {
+  width: 800px; height: 330px;
+  margin: auto;
+  border: 1px solid #333;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tr {
+  width: auto; height: 30px;
+}
+th, td {
+  width: auto; height: 25px;
+  border: 1px solid #333;
+}
