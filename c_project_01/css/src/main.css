@@ -22,6 +22,7 @@ ul,ol,li { list-style: none; }
 }
 /* #headBox -------------------------------------------- */
 #headBox {
+  position: fixed;
   width: 100%; height: auto;
   padding: 20px 50px 10px;
   box-sizing: border-box;
@@ -44,8 +45,26 @@ ul,ol,li { list-style: none; }
 }
 #navBox {
   float: right;
-  width: 510px; height: 70px;
+  width: auto; height: 70px;
   background-color: #777;
+}
+.unb { width: auto; height: 26px; }
+.unb > li {
+  float: left;
+  width: 50px; height: 20px;
+  margin: 0 10px;
+  background-color: aquamarine;
+}
+.gnb {
+  width: auto; height: 35px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.gnb > li {
+  float: left;
+  width: 70px; height: 25px;
+  margin: 0 8px;
+  background-color: aquamarine;
 }
 /* #slideBox ------------------------------------------- */
 #slideBox {
@@ -76,6 +95,12 @@ ul,ol,li { list-style: none; }
   margin: 48px auto 50px;
   background-color: #ccc;
 }
+#newBox .card_01,.card_02,.card_03 {
+  float: left;
+  width: 300px; height: 370px;
+  background-color: aquamarine;
+}
+#newBox .card_02 { margin: 0 20px;}
 .area_indicator {
   width: 140px; height: 30px;
   margin: auto;
