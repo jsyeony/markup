@@ -3,79 +3,112 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/main.css">
   <title>layout project</title>
 </head>
 <body>
   <div id="wrap">
-    <div id="headBox">
-      <div class="area_head">
+    <header id="headBox">
+      <div class="area_head clearfix">
         <h1>osam</h1>
-        <div id="navBox">
-          <ul class="unb">
-            <li>unb_01</li>
-            <li>unb_02</li>
-            <li>unb_03</li>
-            <li>unb_04</li>
-          </ul>
-          <ul class="gnb">
-            <li>gnb_01</li>
-            <li>gnb_02</li>
-            <li>gnb_03</li>
-            <li>gnb_04</li>
-            <li>gnb_05</li>
-            <li>gnb_06</li>
-          </ul>
-        </div>
+        <nav id="navBox">
+          <h2 class="blind">page navigation</h2>
+          <div class="unb">
+            <h3 class="blind">사용자 설정 네비게이션</h3>
+            <ul class="clearfix first_margin">
+              <li>unb_01</li>
+              <li>unb_02</li>
+              <li>unb_03</li>
+              <li>unb_04</li>
+            </ul>
+          </div>
+          <div class="gnb">
+            <h3 class="blind">페이지 전체 네비게이션</h3>
+            <ul class="clearfix first_margin">
+              <li>gnb_01</li>
+              <li>gnb_02</li>
+              <li>gnb_03</li>
+              <li>gnb_04</li>
+              <li>gnb_05</li>
+              <li>gnb_06</li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </div><!-- // #headBox -->
-    <div id="slideBox">
+    </header><!-- // #headBox -->
+    <section id="slideBox">
+      <h2 class="blind">주요 광고 영역</h2>
+      <div class="slide_btn">
+        <button type="button" class="next">다음 내용 보기</button>
+        <button type="button" class="prev">이전 내용 보기</button>
+      </div>
       <div id="adCon_01">
         adCon_01
       </div>
-    </div><!-- // #slideBox -->
-    <div id="newBox">
+    </section><!-- // #slideBox -->
+    <article id="newBox">
       <h2 class="area_title">area_title</h2>
-      <div class="area_content">
-        <!-- area_content -->
+      <div class="area_indicator">
+        <!-- area_indicator -->
         <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="area_content first_margin">
+        <!-- area_content -->
+        <ul class="clearfix">
           <li class="card_01">card_01</li>
           <li class="card_02">card_02</li>
           <li class="card_03">card_03</li>
         </ul>
       </div>
-      <div class="area_indicator">
-        <!-- area_indicator -->
-        <ul></ul>
-      </div>
-    </div><!-- // #newBox -->
-    <div id="subBox">
+    </article><!-- // #newBox -->
+    <section id="subBox">
       <div class="max_width_01 area">
+        <div class="subbox_content">
+          <h2>보조 광고 영역</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur dolor dignissimos iusto. Architecto at, eligendi necessitatibus possimus facere quos!</p>
+          <div class="sub_area_btn"></div>
+        </div>
         <div class="subbox_img">img</div>
-        <div class="subbox_content">content</div>
       </div>
-    </div><!-- // #subBox -->
-    <div id="bestBox">
+    </section><!-- // #subBox -->
+    <article id="bestBox">
       <div class="max_width_01 area">
-        <div class="bestbox_ex">제목 및 설명 영역</div>
-        <ul>
-          <li class="best_card_01">card_01</li>
-          <li class="best_card_02">card_02</li>
-          <li class="best_card_03">card_03</li>
-        </ul>
+        <div class="best_area">
+          <h2>인기 메뉴 리스트</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae veniam et sunt nostrum, possimus facere aliquid vero cupiditate obcaecati?</p>
+          <div class="best_btn"></div>
+          <div class="more_btn"></div>
+        </div>
+        <div class="best_card_list first_margin">
+          <ul>
+            <li class="best_card_01">card_01</li>
+            <li class="best_card_02">card_02</li>
+            <li class="best_card_03">card_03</li>
+          </ul>
+        </div>
       </div>
-    </div><!-- // #bestBox -->
-    <div id="galleryBox">
+    </article><!-- // #bestBox -->
+    <article id="galleryBox">
       <h2 class="max_width_01 area_title">area_title</h2>
       <div class="max_width_01 area_content">
         <div class="gallery_img">img</div>
         <div class="gallery_list">list_area</div>
       </div>
-    </div><!-- // #galleryBox -->
-    <div id="sponsorBox">
+    </article><!-- // #galleryBox -->
+    <aside id="sponsorBox">
+      <h2 class="blind">후원사</h2>
       <div class="max_width_01 sponsor_area">
         <!-- sponsor_area -->
-        <ul>
+        <ul class="clearfix">
           <li>sponsor_01</li>
           <li>sponsor_02</li>
           <li>sponsor_03</li>
@@ -89,16 +122,16 @@
           <li>sponsor_11</li>
         </ul>
       </div>
-    </div><!-- // #sponsorBox -->
-    <div id="footBox">
+    </aside><!-- // #sponsorBox -->
+    <footer id="footBox">
       <div class="max_width_01 area_foot">
         <h2 class="info_logo">오삼커피 회사 정보</h2>
-        <div class="info_company">
+        <div class="info_company clearfix">
           <div class="foot_info_area">content</div>
           <div class="foot_sns_area">sns content</div>
         </div>
       </div>
-    </div><!-- // #footBox -->
+    </footer><!-- // #footBox -->
   </div><!-- // #wrap-->
 </body>
 </html>
