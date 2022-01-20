@@ -1,0 +1,102 @@
+/* c_01_img_vs_background.css */
+.img_area {
+  float: left;
+  width: 200px; height: 200px;
+  margin-right: 150px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+.img_03 { margin-right: 0; }
+/* -------------------------------------------------- */
+.img_01 { overflow: hidden; }
+.img_01 img {
+  width: 100%; height: auto;
+  margin-top: -30px;
+}
+.img_02 {
+  background-image: url("../../img/card_img/mini_card_bg-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.img_02 > span {
+  display: block;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+.img_03 {
+  background: center no-repeat url(../../img/card_img/mini_card_bg-3.png);
+  background-size: cover;
+  font-size: 0;
+}
+.bg_02 > li {
+  width: 500px; height: 200px;
+  margin-bottom: 100px;
+  border: 1px solid #555;
+}
+.bg_02 > li:first-child {
+  background-image: url("../../img/icon/001-instagram.png");
+  background-repeat: repeat-x;
+  /* background-repeat: repeat ll no-repeat ll repeat-x ll repeat-y; */
+}
+.bg_02 > li:nth-child(2) {
+  background-image: url("../../img/icon/002-twitter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg_02 > li:nth-child(3) {
+  background-image: url("../../img/icon/002-twitter.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.bg_02 > li:nth-child(4) {
+  height: 300px;
+  background-image: url("../../img/card_img/mini_card_bg-4.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  /* background-size: cover ll contain; */
+}
+.bg_02 > li:nth-child(5) {
+  height: 300px;
+  background-image: url("../../img/card_img/mini_card_bg-5.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+}
+.bg_02 > li:nth-child(6) {
+  background-image: url("../../img/background/ruedi-haberli-URXf7JZ3XKk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-attachment: scroll ll fixed; */
+}
+.bg_02 > li:nth-child(7) {
+  width: 100%;
+  background-image: url(../../img/card_img/mini_card_bg-7.png),
+                    url(../../img/icon/007-github.png),
+                    url(../../img/card_img/mini_card_bg-9.png);
+  background-repeat: repeat-y, repeat, repeat-y;
+  background-position: 0 0, 0 50%, 100% 0;
+  background-size: auto 50%, auto 30%, auto 50%;
+}
+.bg_02 > li:nth-child(8) {
+  background-image: url("../../img/background/david-dm-YuBKpqxNO20-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150% auto;
+  padding: 50px;
+  border: 30px dotted #fa0;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  /* background-clip: border-box; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  color: transparent;
+}
