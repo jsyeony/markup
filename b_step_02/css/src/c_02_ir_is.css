@@ -1,0 +1,91 @@
+/* c_02_ir_is.css */
+.ir { margin-top: 10px; }
+.ir > li {
+  float: left;
+  width: 80px; height: 80px;
+  border: 1px solid #333;
+  margin: 20px;
+  background-color: #fff;
+}
+.ir > li {
+  background-image: url("../../img/icon_color/hockey.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+.ir > li:nth-child(1) { font-size: 0; }
+.ir > li:nth-child(2) { text-indent: -9999px; overflow: hidden; }
+.ir > li:nth-child(3) > span { position: absolute; z-index: -1; }
+.ir > li:nth-child(4) > span {
+  display: block;
+  width: 0; height: 0;
+  overflow: hidden; 
+}
+/* .ir > li:nth-child(5) { font-size: 0; } */
+.ir > li:nth-child(5) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+.ir > li:nth-child(6) {
+  background-image: url("../../img/icon_color/ice-skating.png");
+}
+.ir > li:nth-child(6) > a { display: block; width: 100%; height: 100%; }
+.ir > li:nth-child(6) > a > span {
+  display: block;
+  width: 0; height: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.ir > li:nth-child(7) {
+  background-image: none;
+}
+.ir > li:nth-child(7) > a {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url("../../img/icon_color/snowboard.png");
+  background-size: 100% auto;
+}
+.ir > li:nth-child(7) > a:focus {
+  background-image: url(../../img/icon_color/ice-skating\ \(2\).png);
+  background-size: 100% auto;
+}
+.ir > li:nth-child(7) > a:hover {
+  background-image: url(../../img/icon_color/ice-skating\ \(1\).png);
+  background-size: 100% auto;
+}
+/* ------------------------------------------------------------------ */
+.is { margin-top: 10px; }
+.is li {
+  float: left;
+  width: 100px; height: 100px;
+  margin: 10px;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+.is li a {
+  display: block;
+  width: 66px; height: 66px;
+  background-image: url(../../img/icon_color/icon_sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto 64px;
+  background-color: #fda;
+}
+.is a > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+.is li a:focus { background-color: #333; }
+.is li a:hover { background-color: #acf; }
+
+.is li:nth-child(2) > a { background-position-x: -68px; }
+.is li:nth-child(3) > a { background-position-x: -136px; }
+.is li:nth-child(4) > a { background-position-x: -201px; }
+.is li:nth-child(5) > a { background-position-x: -265px; }
