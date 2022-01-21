@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* c_04_font.css */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.ex_wrap li {
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+.ex_wrap li:nth-child(1) {
+  /* font-weight: normal; */
+  /* font-weight: bold; */
+  /* font-weight: lighter; */
+  /* font-weight: 400; */
+  font-weight: 400;
+}
+.ex_wrap li:nth-child(2) {
+  /* font-style: normal; */
+  font-style: italic;
+}
+/* em, i, address */
+
+.ex_wrap li:nth-child(3) {
+  /* font-size: 20px; */
+  font-size: 100%;
+}
+/* 16px = 12pt */
+
+.ex_wrap li:nth-child(4) {
+  height: 70px;
+  padding: 0;
+  background-color: #fdd;
+  line-height: 70px;
+}
+.ex_wrap li:nth-child(5) {
+  height: 70px;
+  padding: 0;
+  padding-top: 20px;
+  background-color: #dfd;
+  line-height: 1.5;
+}
+.ex_wrap li:nth-child(6) {
+  position: relative;
+  height: 200px;
+  background-color: #ddd;
+}
+.ex_wrap li:nth-child(6) > span {
+  display: block;
+  position: absolute;
+  height: 0;
+  top: 50%;
+}
+.ex_wrap li:nth-child(6) u {
+  display: block;
+  background-color: #adf;
+  font-size: 20px; line-height: 120%;
+  transform: translateY(-50%);
+}
+.ex_wrap li:nth-child(7) {
+  font-family: 'myriad pro', '돋움';
+}
+.ex_wrap li:nth-child(8) {
+  font-family: 'Jua', sans-serif;
+  color: brown;
+}
+.ex_wrap li:nth-child(9) { letter-spacing: 2px; }
+.ex_wrap li:nth-child(10) { word-spacing: 3px; }
+
+.ex_wrap li:nth-child(11) > a { word-spacing: -4px; text-transform: capitalize; }
+.ex_wrap li:nth-child(12) { 
+  width: 600px; height: 50px;
+  background: #aaefef;
+  text-align: center;
+}
+/* word-break: keep-all; ll break-all; */
