@@ -1,0 +1,10 @@
+/* c_06_font_icon.css */
+li { margin-bottom: 2rem; }
+li:last-child { margin-bottom: 0; }
+
+.ex_wrap li:nth-child(1) {
+  font-size: 4rem;
+  color: blue;
+}
+.ex_wrap li:nth-child(2) a:hover { color: #f05; }
+.ex_wrap li:nth-child(3) { font-size: 3rem; }
