@@ -13,7 +13,8 @@ h1,h2,h3,h4,h5,h6,p,pre,q,ul,ol,li,dl,dt,dd,img {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  line-height: 120%;
+  font-family: inherit;
   vertical-align: baseline;
 }
 ul,ol { list-style: none; }
@@ -44,5 +45,5 @@ table { border-collapse: collapse; border-spacing: 0; }
 abbr { text-decoration: none; }
 
 header,article,section,footer,nav,aside,figure,figcaption,main {
-  display: block;
+  display: block; margin: 0; padding: 0; border: 0;
 }
