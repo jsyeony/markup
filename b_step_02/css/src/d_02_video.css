@@ -1,0 +1,9 @@
+.video_01, .video_02 {
+  width: 100%; height: auto;
+}
+.ex_wrap {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("../../img/background/axel-antas-bergkvist-mqqw1GjU8M0-unsplash.jpg");
+}
