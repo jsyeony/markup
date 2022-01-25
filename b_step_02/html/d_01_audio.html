@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- d_01_audio.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/d_01_audio.css">
+  
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>d_01_audio</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹기초</a></h1>
+    <hr />
+    <div class="part">
+      <h2>audio 사용하기</h2>
+      <div class="ex_wrap">
+        <!-- <audio src="../multi/audio/bensound-cute.ogg" controls></audio> -->
+        <audio controls preload> <!-- autoplay를 적으면 페이지를 열었을때 자동재생 -->
+          <source src="../multi/audio/bensound-cute.ogg" type="audio/ogg" />
+          <source src="../multi/audio/bensound-cute.mp3" type="audio/mp3" />
+          <p>현재 사용중인 브라우저는 사운드가 재생되지 않는 기능을 가지고 있습니다. <br /> <a href="http://google.com/chrome">최신 브라우저</a> 를 설치하시고 사용해 주시기 바랍니다.</p>
+        </audio>
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+</body>
+</html>
