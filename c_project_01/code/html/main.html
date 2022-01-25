@@ -3,6 +3,8 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="html, osam, web, coffee, maker" />
+  <meta name="description" content="My coffee brand is osam." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
@@ -17,7 +19,7 @@
     <header id="headBox">
       <div class="area_head clearfix">
         <h1 class="blind_area">
-          <a href="../index.html">
+          <a href="../index.html" title="osam coffee">
             <span>osam</span>
           </a>
         </h1>
@@ -87,7 +89,7 @@
           <li><a href="#"><span>최신 세번째 내용</span></a></li>
         </ul>
       </div>
-      <div class="area_content first_margin blind_area">
+      <div class="area_content blind_area">
         <!-- area_content -->
         <ul class="clearfix">
           <li><a href="#"><span>card_01</span></a></li>
@@ -97,55 +99,142 @@
       </div>
     </article><!-- // #newBox -->
     <section id="subBox">
-      <div class="max_width_01 area">
+      <div class="area">
         <div class="subbox_content">
-          <h2>보조 광고 영역</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur dolor dignissimos iusto. Architecto at, eligendi necessitatibus possimus facere quos!</p>
-          <div class="sub_area_btn"></div>
+          <h2>banner title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur dolor.</p>
+          <div class="sub_area_btn">
+            <a href="#" class="sub_btn_01">
+              매장 바로가기
+            </a>
+            <a href="#" class="sub_btn_02">
+              더보기
+            </a>
+          </div>
         </div>
-        <div class="subbox_img">img</div>
+        <div class="subbox_img">
+          <span class="blind">서브박스 부연 이미지</span>
+        </div>
+        <div class="subbox_img_bg">
+          <span class="blind">Background_white</span>
+        </div>
       </div>
     </section><!-- // #subBox -->
+
     <article id="bestBox">
       <div class="max_width_01 area">
         <div class="best_area">
-          <h2>인기 메뉴 리스트</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae veniam et sunt nostrum, possimus facere aliquid vero cupiditate obcaecati?</p>
-          <div class="best_btn"></div>
-          <div class="more_btn"></div>
+          <h2>인기상품<br />List</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae veniam.</p>
+          <div class="best_btn clearfix">
+            <button type="button" class="next_btn">
+              <span class="blind">
+                다음 인기 목록 보기
+              </span>
+              &gt;
+            </button>
+            <button type="button" class="prev_btn">
+              <span class="blind">
+                이전 인기 목록 보기
+              </span>
+              &lt;
+            </button>
+          </div>
+          <div class="more_btn">
+            <a href="#">&#43; 더보기</a>
+          </div>
         </div>
         <div class="best_card_list first_margin">
           <ul>
-            <li class="best_card_01">card_01</li>
-            <li class="best_card_02">card_02</li>
-            <li class="best_card_03">card_03</li>
+            <li class="best_card_01">
+              <div class="best_content_01">
+                <h3>God Father</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae recusandae, ducimus ut ab sed.</p>
+                <span>2021. 06. 17</span>
+              </div>
+              <div class="best_img_01">
+                <span class="blind">첫번째 인기 상품</span>
+              </div>
+            </li>
+            <li class="best_card_02">
+              <div class="best_content_02">
+                <h3>Esspresso</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae recusandae, ducimus ut ab sed.</p>
+                <span>2021. 06. 17</span>
+              </div>
+              <div class="best_img_02">
+                <span class="blind">두번째 인기 상품</span>
+              </div>
+            </li>
+            <li class="best_card_03">
+              <div class="best_content_03">
+                <h3>Latte Art</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae recusandae, ducimus ut ab sed.</p>
+                <span>2021. 06. 17</span>
+              </div>
+              <div class="best_img_03">
+                <span class="blind">세번째 인기 상품</span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </article><!-- // #bestBox -->
     <article id="galleryBox">
-      <h2 class="max_width_01 area_title">area_title</h2>
+      <h2 class="area_title">추천 미리보기</h2>
       <div class="max_width_01 area_content">
-        <div class="gallery_img">img</div>
-        <div class="gallery_list">list_area</div>
+        <div class="gallery_img">
+          <span class="blind">추천 미리보기 이미지</span>
+        </div>
+        <div class="gallery_list">
+          <h3 class="blind">미리보기 서비스 리스트</h3>
+          <ul>
+            <li>Service</li>
+            <li>Service</li>
+            <li>Service</li>
+            <li>Service</li>
+          </ul>
+        </div>
       </div>
     </article><!-- // #galleryBox -->
     <aside id="sponsorBox">
       <h2 class="blind">후원사</h2>
-      <div class="max_width_01 sponsor_area">
+      <div class="max_width_01 sponsor_area blind_area">
         <!-- sponsor_area -->
         <ul class="clearfix">
-          <li>sponsor_01</li>
-          <li>sponsor_02</li>
-          <li>sponsor_03</li>
-          <li>sponsor_04</li>
-          <li>sponsor_05</li>
-          <li>sponsor_06</li>
-          <li>sponsor_07</li>
-          <li>sponsor_08</li>
-          <li>sponsor_09</li>
-          <li>sponsor_10</li>
-          <li>sponsor_11</li>
+          <li><a href="#">
+            <span>sponsor_01</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_02</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_03</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_04</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_05</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_06</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_07</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_08</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_09</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_10</span>
+          </a></li>
+          <li><a href="#">
+            <span>sponsor_11</span>
+          </a></li>
         </ul>
       </div>
     </aside><!-- // #sponsorBox -->

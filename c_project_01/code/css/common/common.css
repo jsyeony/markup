@@ -25,6 +25,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.blind_area ul span,
 .blind_area a > span,
 .blind_area button > span,
 .blind {
