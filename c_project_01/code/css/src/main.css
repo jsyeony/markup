@@ -617,7 +617,38 @@ address dd:last-of-type::after { content: ""; display: none; }
 
 .social_family {
   float: right;
-  width: 200px; height: 160px;
-  margin-top: 40px;
-  background-color: aquamarine;
+  width: 160px; height: 135px;
+}
+.social li {
+  float: left;
+  width: 40px; height: 40px;
+  margin-right: 20px; margin-bottom: 8px;
+  background-image: url("../../img/footBox/sns.png");
+  background-repeat: no-repeat;
+}
+.social li > a {
+  display: block;
+  width: 100%; height: 100%; 
+}
+.social li:nth-child(1) {
+  background-position: 0 0;
+}
+.social li:nth-child(2) {
+  background-position: -60px 0;
+}
+.social li:last-child {
+  margin-right: 0;
+  background-position: -120px 0;
+}
+select {
+  width: 100%; height: 30px;
+  margin-bottom: 9px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  text-indent: 5px;
+}
+.authentication {
+  width: 100%; height: 50px;
+  border-radius: 3px;
+  background-color: #fff;
 }
