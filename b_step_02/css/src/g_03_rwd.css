@@ -1,5 +1,5 @@
 /* g_03_rwd.css */
-/*@import url("../rwd/a_old_device.css");
-@import url("../rwd/b_smartphone.css");*/
- @import url("../rwd/c_tablet.css");
-/*@import url("../rwd/d_laptop.css"); */
+@import url("../rwd/a_old_device.css");
+@import url("../rwd/b_smartphone.css");
+@import url("../rwd/c_tablet.css");
+@import url("../rwd/d_laptop.css");
