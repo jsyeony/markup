@@ -1,0 +1,29 @@
+/* g_03_rwd.css */
+
+/* 
+1280px 브라우저 크기 기준
+브라우저가 1280보다 큰 사이즈면 (이상) - 배경색: #ddd
+브라우저가 1280보다 미만 사이즈면 - 배경색: #faa
+*/
+#wrap {
+  width: 100%; height: 100vh;
+  background-color: #acf;
+}
+/* smartphone ========================================================== */
+@media screen and (max-width:767px) {
+  #wrap {
+    background-color: #faa;
+  }
+} /* (max-width:767px) */
+/* tablet ============================================================== */
+@media screen and (min-width:1280px) and (max-width:1439px) {
+  #wrap {
+    background-color: #afa;
+  }
+} /* (min-width:768px) and (max-width:1439px) */
+/* ====================================================================== */
+@media screen and (min-width:1440px) {
+  #wrap {
+    background-color: #ddd;
+  }
+} /* (min-width:1440px) */
