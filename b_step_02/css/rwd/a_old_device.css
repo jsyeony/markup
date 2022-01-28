@@ -1,0 +1,30 @@
+/* a_old_device.css */
+
+#wrap {
+  width: 100%; min-width: 960px; height: auto;
+  margin: auto;
+}
+#headBox {
+  width: 100%; height: 80px;
+  background-color: #cacaca;
+}
+#viewBox {
+  width: 100%; height: 500px;
+  background-color: #fc7676;
+}
+#contentBox {
+  width: 100%; max-width: 1280px;
+  height: 600px;
+  margin: auto;
+  background-color: #bcf88d;
+}
+#supportsBox {
+  width: 100%; max-width: 1280px;
+  height: 300px;
+  margin: auto;
+  background-color: #5196ff;
+}
+#footBox {
+  width: 100%; height: 120px;
+  background-color: #cacaca;
+}

@@ -3,6 +3,10 @@
 reset.css
 그냥 무조건 따라 쓰는것X, 이것을 어떻게 하면 '나'에게 효율적으로 사용할 수 있을지 고민
 */
+:root {
+  font-size: 16px;
+  --color-red: #FC7676;
+}
 body {
   margin: 0;
   line-height: 100%;
