@@ -49,83 +49,96 @@
       </div>
     </header><!-- // #headBox -->
 
-    <article id="joinBox">
+    <article id="joinBox" class="clearfix">
+      <div class="linear_gra"></div>
       <div class="intro_part">
-        <div class="logo_img"></div>
-        <h3>Join</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quia officiis porro facere a veritatis!</p>
+        <div class="intro_part_content">
+          <div class="logo_img"></div>
+          <h3>Join</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quia officiis porro facere a veritatis!</p>
+        </div>
       </div>
       <div class="join_form">
         <form action="#" method="POST">
-          <fieldset>
-            <legend>사용자 이름과 계정 그리고 비밀번호 입력</legend>
-            <label for="userName">
-              <span class="blind">사용자 이름을 입력하세요.</span>
-              <i class="user_icon"></i>
-            </label>
-            <input type="text" id="userName" name="user_name" value="" 
-                   placeholder="이름"/>
-            <label for="userEmail">
-              <span class="blind">사용하실 사용자 이메일을 입력하세요.</span>
-              <i class="mail_icon"></i>
-            </label>
-            <input type="email" id="userEmail" name="user_email" value="" 
-                   placeholder="email@hostname.com"/>
-            <label for="userPw">
-              <span class="blind">비밀번호를 입력하세요.</span>
-              <i class="pw_icon"></i>
-            </label>
-            <input type="password" id="userPw" name="user_pw" value="" 
-                   placeholder="비밀번호"/>
-            <label for="userPwConfirm">
-              <span class="blind">비밀번호 확인을 위해 한번 더 입력해주세요.</span>
-              <i class="pw_icon"></i>
-            </label>
-            <input type="password" id="userPwConfirm" name="user_pw_confirm" value=""
-                   placeholder="비밀번호 확인"/>
-          </fieldset>
-          <fieldset>
-            <legend>전화번호와 생년월일 입력</legend>
-            <div class="user_phone">
-              <label for="phoneIdentiNum">
-                <span class="blind">핸드폰 번호를 입력하세요.</span>
-                <i class="phone_icon"></i>
-              </label>
-              <input type="tel" id="phoneIdentiNum" name="phone_identi_num" value=""
-                     placeholder="010" />
-              <input type="tel" id="phoneMidNum" name="phone_mid_num" value=""
-                     placeholder="0000" />
-              <input type="tel" id="phoneLastNum" name="phone_last_num" value=""
-                     placeholder="0000" />
-            </div>
-            <div class="user_birth">
-              <label for="year">
-                <span class="blind">생년월일을 입력하세요.</span>
-                <i class="calendar_icon"></i>
-              </label>
-              <input type="text" id="year" name="year" value=""
-                     placeholder="년(4자)"/>
-              <select name="month" id="month">
-                <option>월</option>
-                <option value="jan">1월</option>
-                <option value="feb">2월</option>
-                <option value="mar">3월</option>
-                <option value="apr">4월</option>
-                <option value="may">5월</option>
-                <option value="jun">6월</option>
-                <option value="jul">7월</option>
-                <option value="aug">8월</option>
-                <option value="sep">9월</option>
-                <option value="oct">10월</option>
-                <option value="nov">11월</option>
-                <option value="dec">12월</option>
-              </select>
-              <input type="text" id="day" name="day" value=""
-                     placeholder="일"/>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>취소와 가입완료버튼</legend>
+          <div class="user_infor">
+            <fieldset>
+              <legend class="blind">사용자 이름과 계정 그리고 비밀번호 입력</legend>
+              <div class="user_input">
+                <label for="userName">
+                  <span class="blind">사용자 이름을 입력하세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="text" id="userName" name="user_name" value="" 
+                       placeholder="이름"/>
+              </div>
+              <div class="user_input">
+                <label for="userEmail">
+                  <span class="blind">사용하실 사용자 이메일을 입력하세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="email" id="userEmail" name="user_email" value="" 
+                       placeholder="email@hostname.com"/>
+              </div>
+              <div class="user_input">
+                <label for="userPw">
+                  <span class="blind">비밀번호를 입력하세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="password" id="userPw" name="user_pw" value="" 
+                       placeholder="비밀번호"/>
+              </div>
+              <div class="user_input">
+                <label for="userPwConfirm">
+                  <span class="blind">비밀번호 확인을 위해 한번 더 입력해주세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="password" id="userPwConfirm" name="user_pw_confirm" value=""
+                       placeholder="비밀번호 확인"/>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="blind">전화번호와 생년월일 입력</legend>
+              <div class="user_phone">
+                <label for="phoneIdentiNum">
+                  <span class="blind">핸드폰 번호를 입력하세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="tel" id="phoneIdentiNum" name="phone_identi_num" value=""
+                       placeholder="010" />
+                <input type="tel" id="phoneMidNum" name="phone_mid_num" value=""
+                       placeholder="0000" />
+                <input type="tel" id="phoneLastNum" name="phone_last_num" value=""
+                       placeholder="0000" />
+              </div>
+              <div class="user_birth">
+                <label for="year">
+                  <span class="blind">생년월일을 입력하세요.</span>
+                  <i class="icon"></i>
+                </label>
+                <input type="text" id="year" name="year" value=""
+                       placeholder="년(4자)"/>
+                <select name="month" id="month">
+                  <option>월</option>
+                  <option value="jan">1월</option>
+                  <option value="feb">2월</option>
+                  <option value="mar">3월</option>
+                  <option value="apr">4월</option>
+                  <option value="may">5월</option>
+                  <option value="jun">6월</option>
+                  <option value="jul">7월</option>
+                  <option value="aug">8월</option>
+                  <option value="sep">9월</option>
+                  <option value="oct">10월</option>
+                  <option value="nov">11월</option>
+                  <option value="dec">12월</option>
+                </select>
+                <input type="text" id="day" name="day" value=""
+                       placeholder="일"/>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="btn_part">
+            <legend class="blind">취소와 가입완료버튼</legend>
             <button type="reset" value="취소">취소</button>
             <button type="submit" value="가입신청">회원가입</button>
           </fieldset>

@@ -96,12 +96,11 @@ fieldset:nth-of-type(2) {
 .user_input:last-child { margin-bottom: 0; }
 .user_input label { float: left; margin-right: 30px;}
 .user_input input {
-  float: left; width: 340px; height: 100%; 
+  float: right; width: 340px; height: 100%; 
   border: 0; padding: 0; 
   font-size: 1rem; text-indent: 0.5rem;
   color: #757575;
 }
-
 .icon {
   display: block;
   width: 40px; height: 40px;
