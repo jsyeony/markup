@@ -1,3 +1,4 @@
+/* c_joinBox.css */
 #wrap {
   background-image: url("../../img/join_page/join_page_bg.png");
   background-repeat: no-repeat;
@@ -18,20 +19,17 @@ input {
   margin: 200px auto 250px;
   background-color: #fff;
 }
+/* intro_part --------------------------------------------------------------- */
 .linear_gra {
   position: absolute;
   width: 460px; height: 1000px;
-  background-image: linear-gradient(200deg,#fff, rgba(255,255,255,0));
+  background-image: linear-gradient(200deg,#fff,rgba(255,255,255,0));
 }
 .intro_part {
   float: left;
   width: 460px; height: 1000px;
   background-image: url("../../img/join_page/join_page_image.png");
   background-repeat: no-repeat;
-}
-.join_form {
-  float: right;
-  width: 640px; height: 1000px;
 }
 .intro_part_content {
   position: relative;
@@ -57,17 +55,26 @@ h3 {
   font-size: 18px;
   text-align: right;
 }
+
+/* join_form ----------------------------------------------------------------- */
+.join_form {
+  float: right;
+  width: 640px; height: 1000px;
+}
 .icon {
   float: left;
   width: 40px; height: 40px;
   margin-top: 5px; margin-right: 45px;
-  background-color: #dfc;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.icon[for="userName"] {
-  background-image: url("../../img/join_page/person_fill.png");
-}
+label[for="userName"] i { background-image: url("../../img/join_page/person_fill.png"); }
+label[for="userEmail"] i { background-image: url("../../img/join_page/mail.png"); }
+label[for="userPw"] i { background-image: url("../../img/join_page/key.png"); }
+label[for="userPwConfirm"] i { background-image: url("../../img/join_page/key.png"); }
+label[for="phoneIdentiNum"] i { background-image: url("../../img/join_page/mobile.png"); }
+label[for="year"] i { background-image: url("../../img/join_page/calendar.png"); }
+
 .user_infor {
   width: 464px; height: auto;
   margin-top: 180px; margin-bottom: 155px;
@@ -76,57 +83,40 @@ h3 {
 .user_input {
   width: 460px; height: 50px;
   border-bottom: 2px solid #1A5D54;
-  background-color: #ccc;
 }
 .user_input:nth-of-type(1) { margin-bottom: 62px; }
 .user_input:nth-of-type(3) { margin-top: 28px; margin-bottom: 28px; }
 .user_input:nth-of-type(4) { margin-bottom: 78px; }
-.user_input input {
-  background-color: rgb(255, 175, 175); }
-#userName {
-  width: 300px; height: 40px;
-}
-#userEmail {
-  width: 300px; height: 40px;
-}
-#userPw {
-  width: 335px; height: 40px;
-}
-#userPwConfirm {
-  width: 335px; height: 40px;
-}
+
+#userName { width: 300px; height: 40px; }
+#userEmail { width: 300px; height: 40px; }
+#userPw { width: 335px; height: 40px; }
+#userPwConfirm { width: 335px; height: 40px; }
+
 .user_phone {
   width: 460px; height: 50px;
   margin-bottom: 35px;
   border-bottom: 2px solid #1A5D54;
-  background-color: #ddd;
 }
-.user_phone > input { width: 90px; height: 40px; background-color: #dcf; }
+.user_phone > input { width: 90px; height: 40px; margin-right: 44px; }
+.user_phone > input:last-of-type { margin-right: 0; }
 
 .user_birth {
   width: 460px; height: 50px;
   border-bottom: 2px solid #1A5D54;
-  background-color: #ddd;
 }
-.user_birth > input {
-  width: 90px; height: 40px;
-  text-indent: 10px;
-  background-color: #dcf;
-}
-.user_birth > input:first-of-type { margin-right: 42px; }
+.user_birth > input { width: 90px; height: 40px; }
+.user_birth > input:first-of-type { margin-right: 44px; }
 .user_birth > select {
   width: 90px; height: 40px;
-  margin-right: 42px;
+  margin-right: 44px;
   border: 0;
   font-size: 1.125rem; font-weight: 400;
   color: #505050;
-  background-color: #dcf;
 }
 
-.btn_part {
-  width: 460px; height: 60px;
-  margin: auto ;
-}
+/* btn_part --------------------------------------------------------------- */
+.btn_part { width: 460px; height: 60px; margin: auto ; }
 .btn_part > button { border-radius: 8px; }
 .btn_part > button:first-of-type {
   float: left;
@@ -135,7 +125,6 @@ h3 {
   border: 1px solid #000;
   font-size: 1rem;
   color: #505050;
-  background-color: #add;
 }
 .btn_part > button:last-of-type {
   float: right;
@@ -144,3 +133,5 @@ h3 {
   color: #fff;
   background-color: #1A5D54;
 }
+.btn_part button:hover { color: #fff; background-color: #999; }
+.btn_part button:focus { outline: 4px solid #FFBD55; }
