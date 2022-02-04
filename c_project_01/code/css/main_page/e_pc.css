@@ -2,10 +2,9 @@
 
 @media screen and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px */
-  body { background-color: #eef; }
-  /* #wrap {  } */
+
   #headBox { height: 6.25rem; padding-top: 1.25rem; padding-bottom: 0.625rem; }
-  #headBox > * { display: none; }
+  h1 { width: 7.5rem; height: 4.375rem; }
 
   /* #slideBox ------------------------------------------- */
   #slideBox {
@@ -22,7 +21,7 @@
 
   /* #subBox ----------------------------------------------- */
   #subBox { height: 21.875rem; }
-  .subbox_content { right: 70px; width: 400px; }
+  .subbox_content { right: 4.375rem; width: 25rem; }
   .subbox_img {
     float: left;
     width: 28.75rem; height: 18.75rem;

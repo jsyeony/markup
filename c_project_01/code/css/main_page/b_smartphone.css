@@ -2,10 +2,80 @@
 
 @media screen and (max-width:599px) {
   /* 기준 디바이스 크기 : 320px */
-  body { background-color: #eee; }
-  /* #wrap { } */
+
   #headBox {  height: 3.125rem; padding: 0.5rem 0.625rem; }
-  #headBox > * { display: none; }
+  .area_head { height: 100%; }
+  h1 {
+    float: none;
+    position: absolute; top: 0.5rem; left: 50%;
+    width: 3.75rem; height: 2.1875rem;
+    transform: translateX(-50%);
+  }
+  .nav_btn {
+    display: block;
+    position: relative; z-index: 100;
+    width: 2.1875rem; height: 2.1875rem;
+  }
+  #navBox {
+    display: none;
+    position: absolute; top: 0; left: 0; z-index: 50;
+    padding: 0.5rem 1.875rem; box-sizing: border-box;
+    width: 100%; height: 100vh;
+    background-image: url("../../img/main_page_re/mobile/b_navBox/smartophone_nav_origin.png");
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+  }
+  #navBox::before {
+    content: ""; display: block; z-index: 10; z-index: -1;
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: var(--primary_01);
+    opacity: 0.85;
+  }
+  #navBox h2 {
+    position: relative; z-index: 100;
+    width: 3.75rem; height: 2.1875rem;
+    margin: auto; margin-bottom: 1.875rem;
+    background-image: url("../../img/main_page_re/mobile/b_navBox/logo_white.png");
+    background-image: url("../../img/main_page_re/mobile/b_navBox/logo_white.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .unb, .gnb { float: none; width: 100%; min-width: auto; height: auto; }
+  .unb {
+    width: 80%;
+    margin: auto; margin-bottom: 1rem;
+    border-bottom: 0.0625rem solid var(--white);
+  }
+  .unb li {
+    float: left;
+    width: calc(50% - 10px); height: auto;
+    margin: 0; margin-bottom: 0.625rem;
+  }
+  .unb li:nth-child(1) { float: left; }
+  .unb li:nth-child(2n) { float: right; }
+  .gnb ul { float: none; width: 100%; height: auto; }
+  .gnb li {
+    float: none;
+    width: 100%; height: 3.125rem;
+    margin-bottom: 0.9375rem; padding: 0;
+  }
+  .unb a {
+    height: 1.875rem;
+    font-size: 1rem; line-height: 1.875rem;
+    color: var(--white);
+  }
+  .gnb a {
+    display: block;
+    width: 100%; height: 100%;
+    line-height: 3.125rem; color: var(--white);
+    padding: 0;
+    border: 0.0625rem solid var(--white);
+    border-radius: 0.3125rem;
+    font-size: 18px; font-weight: 400;
+  }
 
   /* #slideBox ------------------------------------------- */
   #slideBox {
@@ -28,7 +98,7 @@
   .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
 
   /* #subBox ----------------------------------------------- */
-  #subBox { height: 100vh; min-height: 31.25rem; background-color: #fff; }
+  #subBox { height: 100vh; min-height: 31.25rem; background-color: var(--white); }
   #subBox > .area {
     width: 100%; min-width: auto; height: 100%;
   }
