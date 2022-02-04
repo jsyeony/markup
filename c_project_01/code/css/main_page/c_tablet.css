@@ -15,12 +15,34 @@
 
   /* #newBox --------------------------------------------- */
   #newBox {
-    height: 100vh; min-height: 43.75rem;
+    height: 100vh; min-height: 34.375rem; max-height: 37.5rem;
     padding-top: 3.75rem; padding-bottom: 5.625rem;
   }
+  .area_title {
+    width: 100%; height: auto;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .newBox_area { width: 50.875rem; height: 20rem; margin-top: 3.25rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
 
   /* #subBox ----------------------------------------------- */
-  #subBox { height: 37.5rem; }
+  #subBox { height: 37.5rem; background-color: #fff; }
+  #subBox > .area {
+    width: 100%; min-width: auto; height: 100%;
+  }
+  .subbox_content {
+    z-index: 100; left: 50%;
+    bottom: 15%;
+    width: 500px;
+    transform: translateX(-50%);
+  }
+  .sub_area_btn a:nth-child(1) { width: 250px; }
+  .subbox_img {
+    width: 100%; height: 100%;
+    background-image: url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+    opacity: 0.3;
+  }
 
   /* #bestBox ---------------------------------------------- */
   #bestBox {
@@ -32,6 +54,9 @@
   #galleryBox {
     height: 61.25rem;
     padding-top: 7.75rem; padding-bottom: 7.5rem;
+  }
+  #galleryBox .area_content {
+    width: 100%;
   }
 
   /* #sponsorBox -------------------------------------------- */

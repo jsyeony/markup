@@ -15,13 +15,47 @@
 
   /* #newBox --------------------------------------------- */
   #newBox {
-    height: 100vh; min-height: 37.5rem;
+    height: 100vh; min-height: 37.5rem; max-height: 37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem;
     box-sizing: border-box;
   }
+  .area_title {
+    width: 100%; height: auto;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .newBox_area { width: 50.875rem; height: 20rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
 
   /* #subBox ----------------------------------------------- */
-  #subBox { height: 100vh; min-height: 31.25rem; }
+  #subBox { height: 100vh; min-height: 31.25rem; background-color: #fff; }
+  #subBox > .area {
+    width: 100%; min-width: auto; height: 100%;
+  }
+  .subbox_content {
+    z-index: 100; left: 50%; bottom: 20%;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+  .subbox_content p { min-height: 80px; margin-bottom: 35px; }
+  .sub_area_btn { height: auto; }
+  .sub_area_btn a {
+    display: block;
+    float: none;
+    width: 100%; height: 45px;
+    margin-bottom: 14px;
+  }
+  .sub_area_btn a:nth-child(1) {
+    width: 100%; height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  .sub_area_btn a:nth-child(2) { width: 100%; height: 45px; }
+  .subbox_img {
+    width: 100%; height: 100%;
+    background-image: url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+    opacity: 0.3;
+  }
 
   /* #bestBox ---------------------------------------------- */
   #bestBox {
@@ -34,6 +68,10 @@
     height: auto; min-height: 61.25rem;
     padding-top: 1.5rem; padding-bottom: 8.75rem;
   }
+  #galleryBox .area_content {
+    width: 100%;
+  }
+
 
   /* #sponsorBox -------------------------------------------- */
   #sponsorBox {

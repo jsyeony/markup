@@ -40,3 +40,9 @@
   width: 0; height: 0;
   overflow: hidden;
 }
+
+/* layout -------------------------------------------------------- */
+.area_content {
+  width: 940px; height: 370px;
+  margin: 48px auto 0; 
+}
