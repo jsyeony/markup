@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- b_01_js_link.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_01_js_link.css">
+  <!-- <script src="../js/src/b_01_js_link.js"></script> -->
+  
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+  <title>b_01_js_link</title>
+  <script>
+    // document.write('js를 처음으로 작성하였습니다.');
+    document.write('js를 주석 아래에 작성');
+  </script>
+</head>
+<body>
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_00_content.html">웹 표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>javascript-코드삽입위치</h2>
+      <div class="ex_wrap">
+        <script>
+          document.write("<p>js 코드를 문서 중간에 작성</p>");
+          /*
+          document.write("<p>js 코드를 문서 중간에 작성</p>");
+          document.write("<p>js 코드를 문서 중간에 작성</p>");
+          document.write("<p>js 코드를 문서 중간에 작성</p>");
+          */
+        </script>
+      </div>
+    </div>
+
+    <div class="part">
+      <h2>javascript-주석작성방법</h2>
+      <div class="ex_wrap"></div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/src/b_01_js_link.js"></script>
+  <script>
+    // document.write("문서의 마지막에 내용을 작성");
+    // alert('메세지');
+    console.log('결과 확인');
+    console.warn('경고 !!!');
+    console.error('문제발생 !!!');
+    console.info('정보 !!!');
+  </script>
+</body>
+</html>
