@@ -1,0 +1,16 @@
+/* b_04_jQuery_event.css */
+.code_exam { padding-bottom: 1500px; }
+.ex_wrap p > span {
+  background-color: #fc0;
+}
+.evt li {
+  width: 350px; height: 30px;
+  margin-top: 10px;
+  line-height: 2.3; text-align: center;
+  background-color: #fac;
+}
+.evt a {
+  display: blcok;
+  width: 100%; height: 100%;
+}
+.evt li:nth-child(1):hover { background-color: #ada; }
