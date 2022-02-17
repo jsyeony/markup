@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- a_content.html -->
+<!-- b_07_slide_horizontal_swipe.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -13,12 +13,12 @@
 
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
-  <link rel="stylesheet" href="../css/src/a_content.css">
+  <link rel="stylesheet" href="../css/src/b_07_slide_horizontal_swipe.css">
   <script src="../ie/modernizr-custom.js"></script>
   
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
 
-  <title>a_content</title>
+  <title>b_07_slide_horizontal_swipe</title>
 </head>
 <body>
   <!-- layout -->
@@ -26,22 +26,24 @@
     <h1><a href="./a_content.html">jQuery 기초</a></h1>
     <hr />
     <div class="part">
-      <h2>슬라이드 광고</h2>
+      <h2>사용할 기능</h2>
       <div class="ex_wrap">
-        <ul>
-          <li><a href="./b_01_slide_structor.html">슬라이드 기본 구성에 따른 구조</a></li>
-          <li><a href="./b_02_slide_position_indicator.html">동일한 위치에서 이미지 변경, 인디케이터 활용</a></li>
-          <li><a href="./b_03_slide_horizontal_indicator.html">가로형 슬라이드, 인디케이터 활용</a></li>
-          <li><a href="./b_04_slide_horizontal_btn.html">가로형 슬라이드 다음/이전 버튼 활용</a></li>
-          <li><a href="./b_05_slide_horizontal_btn_v2.html">가로형 슬라이드 다음/이전 버튼 활용 및 확장기능</a></li>
-          <li><a href="./b_06_slide_horizontal_btn_v3.html">가로형 슬라이드 다음/이전 버튼 활용 및 확장기능</a></li>
-          <li><a href="./b_07_slide_horizontal_swipe.html">가로형 슬라이드 swipe 확장기능</a></li>
-        </ul>
+        <h3>가로형 슬라이드 기본 레이아웃</h3>
+        <div class="slide slide_set">
+          <div class="slide_wrapper horizontal_slide">
+            <div class="slide_con_01">광고 01</div>
+            <div class="slide_con_02">광고 02</div>
+            <div class="slide_con_03">광고 03</div>
+            <div class="slide_con_04">광고 04</div>
+            <div class="slide_con_05">광고 05</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <!-- javascript -->
   <script src="../js/common/jquery-3.6.0.min.js"></script>
   <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/b_07_slide_horizontal_swipe.js"></script>
 </body>
 </html>
