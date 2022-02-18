@@ -17,11 +17,11 @@
     "title": "merry christmas",
     "contents": "12월 크리스마스를 맞이하여 연인, 가족을 위한 카페 이벤트가 열렸습니다.",
     "summary": "크리스마스 이벤트 행사",
-    "link": "event_chirstmas_1st.html",
+    "link": "event_christmas_1st.html",
     "image": "christmas_1st.png",
     "description": "christmas_1st",
     "image_use": "hidden",
-    "background": "chirstmas_bg.png"
+    "background": "christmas_bg.png"
   },
   {
     "id": 3,
