@@ -9,9 +9,12 @@
   min-height: 37.5rem; max-height: 56.25rem;
   margin: auto;
 }
-/* ------------------------------------------------------- */
+.slide {
+  width: 100%; height: 100%;
+}
+/* .slide_btn -------------------------------------------- */
 .slide_btn {
-  position: absolute; top: 50%; left: 0; z-index: 200;
+  position: absolute; top: 50%; left: 0; z-index: 120;
   width: 100%; height: 0;
 }
 .slide_btn button {
@@ -24,10 +27,49 @@
 .slide_btn .prev { float: left; }
 .slide_btn button:hover { background-color: var(--primary_01); }
 .slide_btn button:focus { outline: 3px solid #333; }
-/* ------------------------------------------------------- */
-.slide {
-  width: 100%; height: 100%;
+
+/* .slide_indicator ------------------------------------------------ */
+.slide_check_part {
+  position: absolute; z-index: 150;
+  right: 1rem; bottom: 1rem;
+  width: auto; height: 2.5rem;
+  border-radius: 4rem;
+  padding: 0.5rem; box-sizing: border-box;
+  background-color: #fff;
 }
+.slide_indicator {
+  float: left;
+  width: auto; height: 100%;
+  margin-right: 20px;
+}
+.slide_indicator li {
+  float: left; width: 1.5rem; height: 1.5rem;
+  margin-right: 2rem;
+}
+.slide_indicator li a {
+  background-color: var(--light_gray_01);
+  background-color: #ccc;
+  border-radius: 2rem;
+}
+.slide_indicator li a:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--deep_gray);
+}
+.slide_indicator li a:focus { outline: 2px solid var(--primary_02); }
+.slide_indicator li.action { width: 5rem; }
+.slide_indicator li.action a { background-color: var(--primary_01); }
+.slide_check_part p {
+  float: left;
+  width: 3.125rem; height: 100%;
+  line-height: 1.5rem;
+}
+.now_view {
+  font-weight: 700;
+}
+.total_view { font-weight: 500;
+  color: var(--primary_01);
+}
+
+/* .slide_wrapper ------------------------------------------ */
 .slide_wrapper {
   position: relative; z-index: 100;
   width: 100%; height: 100%;
@@ -35,11 +77,18 @@
 }
 .view_cover {
   display: none;
-  position: absolute; top: 0; left: 0;
+  position: absolute; top: 0; left: 0; z-index: 1;
   width: 100%; height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+.view_cover:before {
+  content: ""; display: block;
+  position: absolute; top: 0; left: 0; z-index: -1;
+  width: 100%; height: 100%;
+  background-color: var(--white);
+  opacity: 0.6;
 }
 .view_cover.action { display: block; z-index: 10; }
 .view_con_wrapper {

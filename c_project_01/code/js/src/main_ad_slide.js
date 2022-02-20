@@ -13,6 +13,9 @@ jsonData.done(function(data){
   var slideType = 'position_slide';
   var dataLen = slideData.length;
   var viewBox = $('#viewBox');
+  var viewCover;
+  var setNum = 0;
+  var beforeN = setNum;
 
   // 기능구현
   var slideWrapperSet = '<div class="slide"><div class="slide_wrapper"></div></div>';
@@ -25,8 +28,8 @@ jsonData.done(function(data){
   // 함수
   var slideBtn = function(){
     var insertBtn = '<div class="slide_btn blind_area"><button type="button" class="next"><i class="far fa-chevron-right"></i><span>다음 내용 보기</span></button><button type="button" class="prev"><i class="far fa-chevron-left"></i><span>이전 내용 보기</span></button></div>';
-    slideWrapperCode.prepend(insertBtn);
-  };
+    slideWrapperCode.before(insertBtn);
+  }; // slideBtn();
 
   var slideDivSetFn = function(n){
     slideWrapperCode.append(slideDivSet);
@@ -52,19 +55,130 @@ jsonData.done(function(data){
     divImg.css({'backgroundImage':'url('+imgUrl+slideN.image+')'});
     imgCaption.text(slideN.description);
     imgContent.text(slideN.summary);
-  };
+  }; // slideDivSetFn(n);
 
   var actionFn = function(i){
-    var viewCover = $('.view_cover');
-    viewCover.eq(i).addClass('action');
-  };
+    viewCover = $('.view_cover');
+    // viewCover.eq(i).siblings().removeClass('action');
+
+    // 기능 수정
+    // 선택된 순번 ( setNum, i )의 요소를 나타나게하고, 
+    // 이후 action처리 된 요소를 사라지게( fadeOut ) 만든 다음
+    // 나타난 요소에 action을 부여 ( z-index )
+    if(i === beforeN){
+      viewCover.eq(i).addClass('action');
+    }else{
+      viewCover.eq(i).stop().show();
+      viewCover.eq(beforeN).stop().fadeOut(function(){
+        viewCover.eq(beforeN).removeClass('action');
+        viewCover.eq(i).addClass('action');
+        beforeN = i;
+      });
+    };
+
+  }; // actionFn(n);
   
   var i = 0;
   for(; i < dataLen; i += 1){
     slideDivSetFn(i);
-  }
-  actionFn(0);
+  };
+
+  actionFn(setNum);
   slideBtn();
+  // =================================================================
+  // 인디케이터 생성
+  /*
+    광고 갯수를 파악하여 인디케이터를 생성
+    - 해당하는 순서에 맞는 인디케이터에 action을 설정하여, 인지할 수 있도록
+  */
+  //  담을 코드 작성
+  var indiWrapper = '<div class="slide_check_part"><ul class="slide_indicator blind_area"></ul><p><em class="now_view"></em> / <span class="total_view"></span></p></div>';
+  var indiCode = '<li><a href="#" data-href="#"><span></span></a></li>'
+  
+  // 기능설정1 + 변수
+  slideWrapperCode.before(indiWrapper);
+  var slideCheckPart = $('.slide_check_part');
+  var indiWrapperSelector = viewBox.find('.slide_indicator');
+  var viewLenCkNow = slideCheckPart.find('.now_view');
+  var viewLenCkTotal = slideCheckPart.find('.total_view');
+  var indiSelector;
+
+  // 함수
+  var indicatorSetFn = function(n){
+    indiWrapperSelector.append(indiCode);
+    indiSelector = indiWrapperSelector.find('li');
+    var indiLiLink = indiSelector.eq(n).find('a');
+    var indiLiSpan = indiLiLink.children('span');
+
+    indiLiLink.attr({'data-href':'.'+slideData[n].description});
+    indiLiSpan.text(slideData[n].summary);
+  }; // indicatorSetFn(n);
+
+  var indicatorCheckFn = function(n){
+    viewLenCkNow.text(n+1);
+    viewLenCkTotal.text(dataLen);
+  }; // indicatorCheckFn(n);
+
+  // indicator 생성
+  var j = 0;
+  for(; j < dataLen; j += 1 ){
+    indicatorSetFn(j);
+  };
+
+  indicatorCheckFn(setNum);
+  indiSelector.eq(setNum).addClass('action');
+
+  // ------------------------------------------------------------------------------------
+  // 실제 광고영역 동작 처리
+  /*
+    다음 / 이전 버튼을 누르면 광고가 움직이게 해라
+    인디케이터를 누르면 광고가 움직이게 해라
+    마우스를 광고위에 올리면 일시정지하고, 벗어나면 일정시간마다 내용 변경 해라
+  */
+  // 변수
+  var nextBtn = viewBox.find('.next');
+  var prevBtn = viewBox.find('.prev');
+
+  // 함수
+  // 인디케이터 표시
+  var indiSetFn = function(n){
+    indiSelector.eq(n).siblings().removeClass('action');
+    indiSelector.eq(n).addClass('action');
+  }; // indiSetFn(n);
+
+  // 슬라이드 광고, indiSelector, 체크번호 모두 동시에 처리되어야 하는 기능으로 한번에 수행
+  var actionNumSetFn = function(n){
+    if(n >= dataLen){
+      n = 0;
+      setNum = n;
+    } else if (n < 0){
+      n = dataLen - 1;
+      setNum = n;
+    };
+    actionFn(n);
+    indicatorCheckFn(n);
+    indiSetFn(n);
+  }; // actionNumSetFn(n);
+
+  // 이벤트
+  nextBtn.on('click', function(e){
+    e.preventDefault();
+    setNum += 1;
+    actionNumSetFn(setNum);
+  }); // nextBtn.on('click')
+
+  prevBtn.on('click', function(e){
+    e.preventDefault();
+    setNum -= 1;
+    actionNumSetFn(setNum);
+  }); // prevBtn.on('click')
+
+  indiSelector.find('a').on('click', function(e){
+    e.preventDefault();
+    setNum = $(this).parent().index();
+    actionNumSetFn(setNum);
+  }); // indiSelector.on('click')
+
 
 });
 })(jQuery);
