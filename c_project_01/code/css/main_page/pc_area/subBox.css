@@ -1,0 +1,12 @@
+@media screen and (min-width:1440px) {
+   /* #subBox ----------------------------------------------- */
+   #subBox { height: 21.875rem; }
+   .subbox_content { right: 4.375rem; width: 25rem; }
+   .subbox_img {
+     float: left;
+     width: 28.75rem; height: 18.75rem;
+     transform: translateY(-1.5625rem);
+     background-image: url("../../img/main_page_re/desktop/e_subBox/sub_img.png");
+     box-shadow: 1.875rem 1.5625rem 0 #efefef;
+   }
+}

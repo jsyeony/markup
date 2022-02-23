@@ -1,0 +1,10 @@
+/* main_page/e_pc.css */
+
+@import url(./pc_area/headBox.css);
+@import url(./pc_area/slideBox.css);
+@import url(./pc_area/newBox.css);
+@import url(./pc_area/subBox.css);
+@import url(./pc_area/bestBox.css);
+@import url(./pc_area/galleryBox.css);
+@import url(./pc_area/sponsorBox.css);
+@import url(./pc_area/footBox.css);

@@ -12,7 +12,7 @@ jsonData.done(function(data){
   var slideData = data;
   var slideType = 'position_slide';
   var dataLen = slideData.length;
-  var viewBox = $('#viewBox');
+  var viewBox = $('.slide_set');
   var viewCover;
   var setNum = 0;
   var beforeN = setNum;

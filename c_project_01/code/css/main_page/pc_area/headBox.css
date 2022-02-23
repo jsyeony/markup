@@ -1,0 +1,8 @@
+@media screen and (min-width:1440px) {
+  #headBox {
+    height: 6.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem;
+  }
+  h1 { width: 7.5rem; height: 4.375rem; }
+}
