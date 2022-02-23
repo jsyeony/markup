@@ -1,0 +1,49 @@
+/* b_01_importHtml.css */
+
+.ex_wrap > div {
+  width: 100%; height: 18.75rem;
+  margin-bottom: 1.875rem;
+  padding: 0.5rem 2rem; box-sizing: border-box;
+}
+#box_01 {
+  background-color: #acf;
+}
+#box_02 {
+  background-color: #ddd;
+}
+#box_03 {
+  background-color: #cfd;
+}
+
+h3 {
+  width: 80%; height: auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.ex_wrap p {
+  width: 90%; margin: 10px auto;
+}
+.btn,
+.link {
+  width: 100px; height: auto;
+  margin-top: 3.125rem;
+  padding: 0.3rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.2rem;
+}
+.btn > button {
+  width: 100px; height: auto;
+  padding: 0.3rem 2rem; color: #fa0;
+  background-color: #531;
+}
+.link > a {
+  display: inline-block;
+  width: 100%; height: auto;
+  padding: 0.5rem 1rem; box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #171717;
+  background-color: #fff;
+}
