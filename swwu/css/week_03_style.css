@@ -1,5 +1,52 @@
 @charset "UTF-8";
 
 * {
-  font-family: 'Noto Serif KR', serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 20px;
+  background-color: #fff;
+}
+body { min-width: 1024px; }
+
+/* 헤더영역 ================================================================ */
+.header {
+  max-width: auto;
+  border-bottom: solid 2px #da340a;
+  background-color: #fff;
+}
+.h_container {
+  max-width: 1024px; height: 100px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #fff;
+}
+.logo {
+  float: left;
+  width: 150px; height: auto;
+  margin-top: 20px;
+}
+/* 네비영역 ================================================================== */
+.nav {
+  float: right;
+  margin-top: 55px;
+  list-style: none;
+  background-color: #fff;
+}
+.nav li {
+  display: inline;
+}
+.nav li > a {
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #303030;
+  text-align: center;
+}
+.nav li > a:hover { color: #da340a; }
+.nav li > a:last-child { padding-right: 0; }
+
+.main {
+  display: block;
+  width: 100%; height: auto;
 }
