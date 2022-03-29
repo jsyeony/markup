@@ -1,5 +1,124 @@
 @charset "UTF-8";
 
 * {
+  margin: 0; padding: 0;
   font-family: 'Nanum Gothic', sans-serif;
+}
+body {
+  background-color: #fff;
+}
+/* 헤더 ======================================================= */
+.header {
+  display: block;
+  width: auto; height: auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px #1d1d1d;
+}
+.h_container {
+  width: auto; height: auto;
+  margin: auto;
+  text-align: center;
+}
+/* 유틸리티 ---------------------------------------------- */
+.utility {
+  max-width: auto;
+  padding-right: 10%;
+  padding-bottom: 2px;
+  text-align: right;
+  list-style: none;
+}
+.utility li {
+  display: inline;
+}
+.utility li > a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #343434;
+  font-size: 12px; font-weight: 400;
+}
+.utility li > a:hover {
+  color: blue; font-weight: 800;
+}
+/* 로고 --------------------------------------------------- */
+.logo {
+  width: auto; height: 70px;
+  margin-top: 15px;
+  padding-bottom: 12px;
+}
+/* gnb --------------------------------------------------- */
+.gnb {
+  padding: 10px 0;
+  background-color: #172d55;
+}
+.gnb li {
+  display: inline;
+  margin-right: 120px;
+}
+.gnb li:last-child { margin-right: 0; }
+
+.gnb li > a {
+  color: #fff;
+  font-size: 16px; font-weight: 400;
+  text-decoration: none;
+}
+.gnb li > a:hover {
+  color: #fbb600;
+}
+/* 메인 배너 =========================================================== */
+.main {
+  display: block;
+  width: auto; height: 920px;
+  background-color: #000;
+  background: url('../img/main_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.main_banner {
+  padding: 100px 0;
+  text-align: center;
+}
+/* 푸터 ================================================================= */
+.footer {
+  display: block;
+  width: auto; height: 160px;
+  padding-top: 26px;
+  border-top: 2px solid #172d55;
+  background-color: #e2e2e2;
+}
+.f_container {
+  padding: 0 10%;
+}
+/* 푸터 로고 -------------------------------------------------------- */
+.f_logo {
+  float: right;
+  margin-top: 70px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+/* 푸터 네비 -------------------------------------------------------- */
+.f_nav li {
+  display: inline;
+  padding: 0 50px;
+  border-left: 1px solid #343434;
+}
+.f_nav li:first-child { border-left: 0; padding-left: 0; }
+
+.f_nav li > a {
+  color: #343434;
+  text-decoration: none;
+  font-size: 14px; font-weight: 700;
+}
+.f_nav li > a:hover {
+  color: #172d55;
+}
+/* 회사정보 ---------------------------------------------------------- */
+.info {
+  margin-top: 85px;
+  color: #343434;
+  font-size: 12px;
+}
+address {
+  padding-bottom: 5px;
+  font-style: normal;
 }
