@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+#wrap {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  padding: 0;
+  margin: 0;
+}
+ul,li { list-style: none; }
+a { text-decoration: none; color: #000; cursor: pointer; }
+.blind {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+/* 헤더 영역 ============================================================== */
+header {
+  width: 95%; height: 130px;
+  margin: auto; margin-bottom: 10px;
+}
+.header_wrapper {
+  width: 100%; height: 100%;
+}
+
+/* 로고 ------------------------------------------------- */
+h1 {
+  float: left;
+  width: 120px; height: 95px;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+h1 > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+/* 유틸리티 ------------------------------------------------ */
+.utility {
+  float: right;
+  width: 334px; height: auto;
+  padding-top: 15px;
+}
+.utility > ul {
+  width: 100%; height: 20px;
+  padding: 0;
+}
+.utility li {
+  float: left;
+  width: auto; height: auto;
+  margin-left: 30px;
+}
+.utility li:first-child { margin-left: 0; }
+.utility li > a {
+  display: block;
+  width: 100%; height: 100%;
+  font-size: 14px; font-weight: 100;
+}
+.utility li:hover > a {
+  background-color: #eee;
+}
+
+/* gnb 네비게이션 ---------------------------------------------- */
+.gnb {
+  width: auto; height: auto;
+  padding-top: 50px;
+}
+.gnb > ul {
+  float: left;
+  width: 792px; height: auto;
+}
+.gnb li {
+  float: left;
+  width: auto; height: auto;
+  margin-right: 50px;
+}
+.gnb li > a {
+  display: block;
+  width: 100%; height: 100%;
+  font-size: 18px; font-weight: 400;
+}
+.gnb li:hover > a {
+  background-color: #eee;
+}
+
+/* 메인 배너 영역 ============================================================= */
+.main_wrapper {
+  position: relative;
+  width: 100%; height: 800px;
+}
+.main_banner {
+  width: 100%; height: 100%;
+  background: url(../img/main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+video {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+}
+
+/* 푸터 영역 ==================================================================== */
+footer {
+  width: 95%; height: 200px;
+  margin: auto;
+  padding-top: 10px;
+  background-color: #fff;
+}
+.footer_wrapper {
+  width: 100%; height: 100%;
+  margin: auto;
+}
+/* 푸터 네비 ----------------------------------------------- */
+.footer_nav {
+  width: 100%; height: auto;
+}
+.footer_nav > ul {
+  width: 100%; height: 100%;
+  padding: 0;
+}
+.footer_nav li {
+  float: left;
+  width: auto; height: auto;
+  padding: 0 20px;
+  border-right: 1px solid #ddd;
+}
+.footer_nav li:last-child { border: 0; }
+.footer_nav li > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+.footer_nav li:hover > a {
+  background-color: #eee;
+}
+
+/* 푸터 로고 & 회사 정보 영역 --------------------------------- */
+.footer_sub_wrap {
+  width: 700px; height: 100px;
+  padding-top: 60px;
+}
+.footer_logo {
+  float: left;
+  width: 120px; height: 97px;
+  margin-left: 20px;
+  background: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.info {
+  float: left;
+  width: auto; height: auto;
+  margin-top: 30px; margin-left: 20px;
+  font-size: 14px; font-weight: 100;
+  color: #333;
+}
+address {
+  font-style: normal;
+}
+p {
+  margin: 0; margin-top: 5px;
+}
